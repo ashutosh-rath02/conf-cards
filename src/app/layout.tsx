@@ -18,21 +18,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning>
         <div className="fixed inset-0 -z-10">
-          {/* Base background */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#1B2735_0%,#090A0F_100%)]" />
 
-          {/* Animated grid */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:40px_40px]">
             <div className="absolute inset-0 animate-grid-flow" />
           </div>
 
-          {/* Aurora effects */}
           <div className="absolute inset-0 overflow-hidden opacity-30">
             <div className="aurora top-0 left-[-50%] bg-[radial-gradient(circle,#4CAF50,#2196F3,#9C27B0)]" />
             <div className="aurora bottom-[-50%] right-[-50%] bg-[radial-gradient(circle,#FF9800,#E91E63,#9C27B0)]" />
           </div>
-
-          {/* Interactive particles */}
           <div className="particles absolute inset-0 opacity-50">
             {[...Array(100)].map((_, i) => (
               <div
